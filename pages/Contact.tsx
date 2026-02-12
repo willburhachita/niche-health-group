@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
             Contact <span className="text-primary italic">Niche</span> Group
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Reach out to our teams in Perth or Lusaka for corporate inquiries, training, or clinical services.
+            Reach out to our teams in Lusaka or Perth for dialysis services, medical supplies, clinical training, or corporate inquiries.
           </p>
         </div>
         <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -23,15 +23,15 @@ const Contact: React.FC = () => {
           {/* Australia */}
           <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl">
             <div className="h-64 relative flex items-center justify-center">
-              <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqXi4CApdbLOcoA_2T8tfHF-ISTRE9Id9c5EC0oXtv6MAXT_HBQgBFccYMmYAGTPC47XpmxuuaTHOhg7un1dSkri-mGLyxf-OY_qlaBg85_SSznrSnCKuFpor60Nswa-QHhWTjs8W315faetX0O61lMxHZE7OKrgUdZ5vMclq2uRINMQXt9AODl-vR5qgKXbEq0aKFvbE_Cjz5SI7-2MNMDHgfwoyWn5afphDDi1Cb4cPU49DeNMa1wz2D6d_Z6XYY7eeeAwwPltjr" 
-                alt="Australia Location" 
+              <img
+                src="/images/wholesale_pharmacy_1770889446699.png"
+                alt="Australia Location"
                 className="absolute inset-0 w-full h-full object-cover opacity-60"
               />
               <div className="relative z-10 text-center">
                 <span className="material-symbols-outlined text-6xl text-primary mb-3">location_on</span>
                 <h3 className="text-3xl font-bold text-slate-900 dark:text-white">Perth, Australia</h3>
-                <p className="text-slate-600 dark:text-slate-300 font-medium">Headquarters & Logistics</p>
+                <p className="text-slate-600 dark:text-slate-300 font-medium">Sister Company — Healthcare Exports</p>
               </div>
             </div>
             <div className="p-10 space-y-8">
@@ -53,21 +53,30 @@ const Contact: React.FC = () => {
                   <p className="text-slate-600 dark:text-slate-400">+61 426 170 805</p>
                 </div>
               </div>
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
+                  <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:underline">info@nichehealthcaregroup.com</a>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Zambia */}
           <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl">
             <div className="h-64 relative flex items-center justify-center">
-              <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaLIQ8MOx04VvAS5AWt_kgeXix6GqGzmystZ-e1JERifY6PTNWF8V21eWGrwkpFWAXiYdzWlAnX0tIPIc75gICHJn_kgUSSDrG2okUfE1lMMmE4sHVHaIAy1gl08_rYdato5Uh7X8BdqlkFeGEqkpSE_93Y-2ewIpb9Jb19lvRyxBe5jFftZRo4zh2Lji39rhlR2fIT6C5C4ArZOiiSraLaderijmfANx-zTOvrarqWy-i5176ij_tIfOaLn7Gjrmykuwtr7mTaSCy" 
-                alt="Zambia Location" 
+              <img
+                src="/images/headquarters.png"
+                alt="Zambia Location"
                 className="absolute inset-0 w-full h-full object-cover opacity-60"
               />
               <div className="relative z-10 text-center">
                 <span className="material-symbols-outlined text-6xl text-primary mb-3">public</span>
                 <h3 className="text-3xl font-bold text-slate-900 dark:text-white">Lusaka, Zambia</h3>
-                <p className="text-slate-600 dark:text-slate-300 font-medium">Training & Services Hub</p>
+                <p className="text-slate-600 dark:text-slate-300 font-medium">Headquarters — Renal Services, Pharmacy & Training</p>
               </div>
             </div>
             <div className="p-10 space-y-8">
@@ -87,6 +96,15 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Phone</h4>
                   <p className="text-slate-600 dark:text-slate-400">+260 779 156334</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
+                  <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:underline">info@nichehealthcaregroup.com</a>
                 </div>
               </div>
             </div>
@@ -118,8 +136,9 @@ const Contact: React.FC = () => {
                   <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Subject</label>
                   <select className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
                     <option>General Inquiry</option>
-                    <option>Training Programs</option>
-                    <option>Medical Supplies</option>
+                    <option>Dialysis / Renal Services</option>
+                    <option>Wholesale Pharmacy</option>
+                    <option>Clinical Training (BLS/IRAD/ALS)</option>
                   </select>
                 </div>
                 <div className="space-y-3">

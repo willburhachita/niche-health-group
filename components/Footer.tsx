@@ -10,11 +10,12 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-2 mb-8">
               <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-slate-900 font-black text-xl">N</div>
-              <span className="font-bold text-2xl tracking-tight uppercase">NICHE HEALTHCARE GROUP</span>
+              <span className="font-bold text-2xl tracking-tight uppercase">NICHE HEALTHCARE LIMITED</span>
             </div>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
-              Bridging international healthcare standards with local needs across Central and Southern Africa. Providing professional training, consultancy, and medical exports.
+              A Zambian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.
             </p>
+            <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:text-primary/80 transition-colors text-sm font-medium mb-6 inline-block">info@nichehealthcaregroup.com</a>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
@@ -37,9 +38,9 @@ const Footer: React.FC = () => {
             <h4 class="font-bold text-lg mb-8">Newsletter</h4>
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
               <div className="relative">
-                <input 
-                  type="email" 
-                  className="w-full bg-slate-900 border-slate-800 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary" 
+                <input
+                  type="email"
+                  className="w-full bg-slate-900 border-slate-800 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary"
                   placeholder="Email address"
                 />
                 <button className="absolute right-2 top-2 w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-slate-900">
@@ -54,7 +55,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
-          <p>© 2025 Niche Healthcare Group. All Rights Reserved.</p>
+          <p>© 2025 Niche Healthcare Limited. All Rights Reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

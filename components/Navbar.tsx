@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
               to="/contact" 
               className="bg-primary text-slate-900 px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:scale-105 active:scale-95 transition-all hidden sm:block"
             >
-              Appointment
+              Book Appointment
             </Link>
             <button 
               className="md:hidden p-2 text-slate-700 dark:text-slate-300"
@@ -117,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
               to="/contact" 
               className="bg-primary text-slate-900 px-8 py-4 rounded-2xl font-bold text-center text-lg"
             >
-              Make Appointment
+              Book Appointment
             </Link>
             <div className="mt-auto pb-10">
               <p className="text-slate-500 dark:text-slate-400 text-sm mb-4">Contact us in Perth</p>
