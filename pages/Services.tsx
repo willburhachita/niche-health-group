@@ -35,7 +35,7 @@ const Services: React.FC = () => {
                 Our core focus includes comprehensive dialysis treatments, hypertension management, and other chronic medical conditions management. Distinguishing features include a patient-centred philosophy, rigorous quality assurance systems, and the integration of telehealth and digital health innovations.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-secondary text-white px-10 py-4 rounded-full font-bold hover:shadow-xl transition-all flex items-center gap-2">
+                <Link to="/contact" className="bg-secondary text-slate-900 px-10 py-4 rounded-full font-bold hover:shadow-xl transition-all flex items-center gap-2">
                   Book Appointment <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
               </div>
@@ -90,7 +90,7 @@ const Services: React.FC = () => {
               </ul>
 
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-secondary text-white px-10 py-4 rounded-full font-bold hover:shadow-xl transition-all flex items-center gap-2">
+                <Link to="/contact" className="bg-secondary text-slate-900 px-10 py-4 rounded-full font-bold hover:shadow-xl transition-all flex items-center gap-2">
                   Request Supply <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
               </div>
@@ -163,7 +163,7 @@ const Services: React.FC = () => {
                     <span className="material-symbols-outlined">mail</span>
                     <a href="mailto:info@nichehealthcaregroup.com" className="hover:underline">info@nichehealthcaregroup.com</a>
                   </div>
-                  <Link to="/contact" className="inline-block bg-primary text-slate-900 px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition-all">
+                  <Link to="/contact" className="inline-block bg-primary text-white px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition-all">
                     Enquire About Training
                   </Link>
                 </div>
@@ -224,7 +224,7 @@ const Services: React.FC = () => {
 
               <div className="mt-12 text-center">
                 <p className="text-slate-400 text-lg mb-6 px-4">Call or email our team to discuss the cost and booking arrangements</p>
-                <a href="mailto:info@nichehealthcaregroup.com" className="inline-flex w-full sm:w-auto justify-center items-center gap-2 sm:gap-3 bg-primary text-slate-900 px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:shadow-2xl transition-all break-all sm:break-normal">
+                <a href="mailto:info@nichehealthcaregroup.com" className="inline-flex w-full sm:w-auto justify-center items-center gap-2 sm:gap-3 bg-primary text-white px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:shadow-2xl transition-all break-all sm:break-normal">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">mail</span> info@nichehealthcaregroup.com
                 </a>
               </div>
@@ -246,9 +246,9 @@ const Services: React.FC = () => {
               {/* Case Study 1 */}
               <div className="bg-white dark:bg-slate-900 rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition-all">
                 <div className="bg-gradient-to-br from-secondary to-secondary/80 p-10">
-                  <span className="bg-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 inline-block backdrop-blur-sm">CASE STUDY 1</span>
-                  <h3 className="text-2xl font-bold text-white mb-2">Observership & Partnership</h3>
-                  <p className="text-white/70">Livingstone General Hospital Attachment</p>
+                  <span className="bg-white/40 text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full mb-4 inline-block backdrop-blur-sm">CASE STUDY 1</span>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">Observership & Partnership</h3>
+                  <p className="text-slate-900/80 font-medium">Livingstone General Hospital Attachment</p>
                 </div>
                 <div className="p-10">
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">

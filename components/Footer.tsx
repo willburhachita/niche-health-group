@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 text-white pt-24 pb-12">
+    <footer className="bg-brandnavy text-white pt-24 pb-12">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 lg:col-span-2">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-slate-900 font-black text-xl">N</div>
-              <span className="font-bold text-2xl tracking-tight uppercase">NICHE HEALTHCARE LIMITED</span>
+            <div className="flex items-center gap-2 mb-8 group">
+              <img src="/images/logo.png" alt="Niche Healthcare Limited Logo" className="h-32 sm:h-40 w-auto object-contain bg-white rounded-2xl p-3 drop-shadow-md group-hover:scale-105 transition-transform" />
             </div>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
               A Zambian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.

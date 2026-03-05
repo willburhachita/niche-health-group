@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                 Niche Healthcare Limited delivers exceptional, patient-centred dialysis services, reliable medical consumables supply, and professional clinical training from Lusaka, Zambia.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <Link to="/services" className="bg-primary text-slate-900 px-8 py-3 rounded-full font-black text-sm hover:shadow-2xl hover:-translate-y-1 transition-all w-full sm:w-auto text-center">
+                <Link to="/services" className="bg-primary text-white px-8 py-3 rounded-full font-black text-sm hover:shadow-2xl hover:-translate-y-1 transition-all w-full sm:w-auto text-center">
                   Explore Our Capabilities
                 </Link>
                 <Link to="/services" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-white/20 transition-all w-full sm:w-auto text-center">
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-secondary text-white relative overflow-hidden">
+      <section className="py-32 bg-brandnavy text-white relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-24 text-center relative z-10">
           <Reveal width="100%">
             <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter">Ready for Exceptional Renal Care?</h2>
@@ -182,7 +182,7 @@ const Home: React.FC = () => {
               Whether you need dialysis services, certified clinical training, or reliable medical consumables, our team of experts is ready to assist.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link to="/contact" className="bg-primary text-slate-900 px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl shadow-primary/20">
+              <Link to="/contact" className="bg-primary text-white px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl shadow-primary/20">
                 Send Inquiry
               </Link>
               <a href="tel:+61426170805" className="border border-white/20 backdrop-blur-md px-12 py-5 rounded-full font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3">

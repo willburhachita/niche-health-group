@@ -97,8 +97,8 @@ const About: React.FC = () => {
             <div className="max-w-4xl mx-auto relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 dark:before:via-slate-700 before:to-transparent">
               {timelineData.map((item, idx) => (
                 <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active py-8">
-                  <div className={`flex items-center justify-center w-12 h-12 rounded-full border-4 border-white dark:border-slate-900 bg-${item.color} text-slate-900 shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2`}>
-                    <span className={`material-symbols-outlined text-xl ${item.color === 'secondary' ? 'text-white' : ''}`}>{item.icon}</span>
+                  <div className={`flex items-center justify-center w-12 h-12 rounded-full border-4 border-white dark:border-slate-900 bg-${item.color} shadow-xl shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${item.color === 'primary' ? 'text-white' : 'text-slate-900'}`}>
+                    <span className="material-symbols-outlined text-xl">{item.icon}</span>
                   </div>
                   <div className="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[2.5rem] bg-slate-50 dark:bg-card-dark border border-slate-100 dark:border-slate-800 shadow-lg">
                     <div className="flex items-center justify-between space-x-2 mb-2">
@@ -126,7 +126,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative">
                 <img src="/images/headquarters.png" alt="Lusaka HQ" className="rounded-[3rem] shadow-2xl h-[500px] w-full object-cover" />
-                <div className="absolute -top-6 -left-6 bg-primary text-slate-900 p-8 rounded-[2rem] font-bold shadow-xl">Zambia HQ</div>
+                <div className="absolute -top-6 -left-6 bg-primary text-white p-8 rounded-[2rem] font-bold shadow-xl">Zambia HQ</div>
               </div>
               <div>
                 <h3 className="text-3xl font-bold mb-6">Woodlands, Lusaka — Headquarters</h3>

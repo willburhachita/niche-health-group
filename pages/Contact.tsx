@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
                     <textarea rows={5} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-3xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="How can we help you today?"></textarea>
                   </div>
                   <div className="md:col-span-2 pt-6">
-                    <button className="w-full bg-primary text-slate-900 font-black py-5 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all text-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3">
+                    <button className="w-full bg-primary text-white font-black py-5 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all text-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3">
                       <span className="material-symbols-outlined">send</span> Send Message
                     </button>
                   </div>
@@ -174,7 +174,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-24 bg-secondary">
+      <section className="py-24 bg-brandnavy">
         <div className="container mx-auto px-6 lg:px-24 text-center">
           <Reveal width="100%">
             <div className="bg-white/10 p-12 lg:p-20 rounded-[4rem] backdrop-blur-xl border border-white/20 flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Ready to consult with experts?</h2>
                 <p className="text-white/70 text-xl font-light">Our medical teams are available for strategy sessions across timezones.</p>
               </div>
-              <button className="bg-primary text-slate-900 px-12 py-5 rounded-full font-bold text-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
+              <button className="bg-primary text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
                 Schedule Now
               </button>
             </div>

@@ -27,13 +27,13 @@ const CookieConsent: React.FC = () => {
           We use essential cookies to provide a premium healthcare portal experience and track service excellence.
         </p>
         <div className="flex gap-3">
-          <button 
+          <button
             onClick={handleAccept}
-            className="flex-1 bg-primary text-slate-900 text-sm font-bold py-3.5 rounded-2xl hover:opacity-90 transition-all shadow-lg shadow-primary/10"
+            className="flex-1 bg-primary text-white text-sm font-bold py-3.5 rounded-2xl hover:opacity-90 transition-all shadow-lg shadow-primary/10"
           >
             Accept All
           </button>
-          <button 
+          <button
             onClick={() => setIsVisible(false)}
             className="flex-1 bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white text-sm font-bold py-3.5 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-600 transition-all"
           >

@@ -37,9 +37,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
     <>
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-[60] w-[90%] max-w-4xl">
         <div className="glass-nav rounded-full px-3 sm:px-4 py-1.5 flex items-center justify-between shadow-xl">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary rounded-lg flex items-center justify-center text-slate-900 font-extrabold shadow-sm group-hover:scale-105 transition-transform text-[10px] sm:text-xs">N</div>
-            <span className="font-bold text-sm sm:text-base tracking-tighter uppercase text-slate-900 dark:text-white">NICHE</span>
+          <Link to="/" className="flex items-center gap-2 group bg-white/90 px-3 py-1.5 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+            <img src="/images/logo.png" alt="Niche Healthcare Limited Logo" className="h-10 sm:h-14 w-auto object-contain group-hover:scale-105 transition-transform drop-shadow-sm" />
           </Link>
 
           <div className="hidden md:flex items-center gap-4 lg:gap-6 text-xs font-bold uppercase tracking-wide">
@@ -70,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
             </button>
             <Link
               to="/contact"
-              className="bg-primary text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold hover:shadow-lg hover:scale-105 active:scale-95 transition-all hidden sm:block"
+              className="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-bold hover:shadow-lg hover:scale-105 active:scale-95 transition-all hidden sm:block"
             >
               Book Appointment
             </Link>
@@ -111,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
             <div className="h-px bg-slate-100 dark:bg-slate-800 my-4"></div>
             <Link
               to="/contact"
-              className="bg-primary text-slate-900 px-8 py-4 rounded-2xl font-bold text-center text-lg"
+              className="bg-primary text-white px-8 py-4 rounded-2xl font-bold text-center text-lg"
             >
               Book Appointment
             </Link>
