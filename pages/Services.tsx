@@ -11,9 +11,27 @@ const Services: React.FC = () => {
           <Reveal width="100%">
             <span className="text-secondary dark:text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Specializations</span>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-8 tracking-tight">Products & Services</h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
-              Niche Healthcare Limited operates through specialised divisions — Niche Renal Services, Niche Wholesale Pharmacy, and our Clinical Training Centre — to deliver comprehensive healthcare solutions.
+            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
+              Niche Renal Services operates through specialised divisions — Niche Wholesale Pharmacy, and our Clinical Training Centre — to deliver comprehensive healthcare solutions.
             </p>
+
+            {/* Quick Navigation Menu */}
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 max-w-4xl mx-auto">
+              {[
+                { name: 'Renal Care', id: 'renal', icon: 'water_drop' },
+                { name: 'Wholesale Pharmacy', id: 'pharmacy', icon: 'inventory_2' },
+                { name: 'Training Centre', id: 'training', icon: 'school' }
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' })}
+                  className="glass-card px-8 py-4 rounded-3xl flex items-center gap-4 hover:bg-white/60 dark:hover:bg-slate-800/60 transition-all hover:shadow-xl hover:-translate-y-1 group"
+                >
+                  <span className="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <span className="font-bold text-sm tracking-wide text-slate-700 dark:text-slate-300 whitespace-nowrap">{item.name}</span>
+                </button>
+              ))}
+            </div>
           </Reveal>
         </div>
       </header>
@@ -21,7 +39,7 @@ const Services: React.FC = () => {
       <main className="container mx-auto px-6 lg:px-24 pb-32">
 
         {/* ==================== SERVICE 1: NICHE RENAL SERVICES ==================== */}
-        <section className="mb-40 flex flex-col lg:flex-row gap-16 items-center">
+        <section id="renal" className="mb-40 flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">
             <Reveal direction="right">
               <div className="w-20 h-20 bg-primary/20 rounded-3xl flex items-center justify-center mb-8">
@@ -29,7 +47,7 @@ const Services: React.FC = () => {
               </div>
               <h2 className="text-4xl font-bold mb-6 text-slate-900 dark:text-white leading-tight">Niche Renal Services (NRS)</h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                The name "Niche" embodies the company's dedication to serving a specialised segment of the healthcare sector — patients living with chronic kidney disease (CKD). NHL delivers tailored, high-quality renal care solutions while operating at the intersection of advanced medical service delivery and healthcare supply.
+                The name "Niche" embodies the company's dedication to serving a specialised segment of the healthcare sector — patients living with chronic kidney disease (CKD). NRS delivers tailored, high-quality renal care solutions while operating at the intersection of advanced medical service delivery and healthcare supply.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
                 Our core focus includes comprehensive dialysis treatments, hypertension management, and other chronic medical conditions management. Distinguishing features include a patient-centred philosophy, rigorous quality assurance systems, and the integration of telehealth and digital health innovations.
@@ -53,7 +71,7 @@ const Services: React.FC = () => {
         </section>
 
         {/* ==================== SERVICE 2: NICHE WHOLESALE PHARMACY ==================== */}
-        <section className="mb-40 flex flex-col lg:flex-row-reverse gap-16 items-center">
+        <section id="pharmacy" className="mb-40 flex flex-col lg:flex-row-reverse gap-16 items-center">
           <div className="lg:w-1/2">
             <Reveal direction="left">
               <div className="w-20 h-20 bg-secondary/20 rounded-3xl flex items-center justify-center mb-8">
@@ -91,7 +109,7 @@ const Services: React.FC = () => {
 
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="bg-secondary text-white px-10 py-4 rounded-full font-bold hover:shadow-xl transition-all flex items-center gap-2">
-                  Request Supply <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  REQUEST AN ORDER <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
               </div>
             </Reveal>
@@ -99,7 +117,7 @@ const Services: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="right">
               <div className="aspect-video lg:aspect-[4/3] w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/wholesale_pharmacy_1770889446699.png" alt="Niche Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/wholesale_pharmacy_new.png" alt="Niche Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
 
@@ -147,7 +165,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* ==================== SERVICE 3: CLINICAL TRAINING ==================== */}
-        <section className="bg-slate-900 rounded-[4rem] p-12 lg:p-24 text-white overflow-hidden relative mb-40">
+        <section id="training" className="bg-slate-900 rounded-[4rem] p-12 lg:p-24 text-white overflow-hidden relative mb-40">
           <Reveal width="100%">
             <div className="relative z-10">
               <div className="flex flex-col lg:flex-row items-start gap-16 mb-20">
@@ -161,7 +179,7 @@ const Services: React.FC = () => {
                   </p>
                   <div className="flex items-center gap-4 text-primary text-sm font-bold mb-6">
                     <span className="material-symbols-outlined">mail</span>
-                    <a href="mailto:info@nichehealthcaregroup.com" className="hover:underline">info@nichehealthcaregroup.com</a>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="hover:underline">contact@nichehealthcaregroup.com</a>
                   </div>
                   <Link to="/contact" className="inline-block bg-primary text-slate-900 px-12 py-5 rounded-full font-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition-all">
                     Enquire About Training
@@ -169,7 +187,7 @@ const Services: React.FC = () => {
                 </div>
                 <div className="lg:w-1/2">
                   <div className="rounded-[3rem] overflow-hidden shadow-2xl relative group h-[500px]">
-                    <img src="/images/clinical_training_1770889813333.png" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" />
+                    <img src="/images/clinical_training_new.png" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent flex items-end p-12">
                       <div>
                         <span className="bg-primary/90 text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full mb-4 inline-block">ACCREDITED</span>
@@ -224,8 +242,8 @@ const Services: React.FC = () => {
 
               <div className="mt-12 text-center">
                 <p className="text-slate-400 text-lg mb-6 px-4">Call or email our team to discuss the cost and booking arrangements</p>
-                <a href="mailto:info@nichehealthcaregroup.com" className="inline-flex w-full sm:w-auto justify-center items-center gap-2 sm:gap-3 bg-primary text-slate-900 px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:shadow-2xl transition-all break-all sm:break-normal">
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">mail</span> info@nichehealthcaregroup.com
+                <a href="mailto:contact@nichehealthcaregroup.com" className="inline-flex w-full sm:w-auto justify-center items-center gap-2 sm:gap-3 bg-primary text-slate-900 px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:shadow-2xl transition-all break-all sm:break-normal">
+                  <span className="material-symbols-outlined text-xl sm:text-2xl">mail</span> contact@nichehealthcaregroup.com
                 </a>
               </div>
             </div>

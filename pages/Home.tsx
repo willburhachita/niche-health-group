@@ -28,7 +28,7 @@ const Home: React.FC = () => {
                 Bridging <span className="text-primary italic font-serif">International</span> <br />Healthcare Needs
               </h1>
               <p className="text-sm md:text-lg text-slate-200 mb-8 leading-relaxed max-w-2xl font-light">
-                Niche Healthcare Limited delivers exceptional, patient-centred dialysis services, reliable medical consumables supply, and professional clinical training from Lusaka, Zambia.
+                Niche Renal Services delivers exceptional, patient-centred dialysis services, reliable medical consumables supply, and professional clinical training from Lusaka, Zambia.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <Link to="/services" className="bg-primary text-slate-900 px-8 py-3 rounded-full font-black text-sm hover:shadow-2xl hover:-translate-y-1 transition-all w-full sm:w-auto text-center">
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
                     <span className="text-primary font-bold text-xs tracking-[0.2em] uppercase mb-6 block">Niche Renal Services</span>
                     <h3 className="text-3xl font-bold mb-8 leading-tight text-slate-900 dark:text-white">Comprehensive Dialysis & Renal Care</h3>
                     <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-10">
-                      NHL delivers tailored, high-quality renal care solutions for patients living with chronic kidney disease (CKD), including comprehensive dialysis treatments, hypertension management, and chronic medical conditions management.
+                      NRS delivers tailored, high-quality renal care solutions for patients living with chronic kidney disease (CKD), including comprehensive dialysis treatments, hypertension management, and chronic medical conditions management.
                     </p>
                     <div className="flex items-center gap-10">
                       <div>
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-center gap-24">
               <div className="w-full lg:w-1/2 relative">
                 <div className="aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl relative">
-                  <img src="/images/headquarters.png" alt="NHL Headquarters" className="w-full h-full object-cover" />
+                  <img src="/images/headquarters.png" alt="NRS Headquarters" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
                 <div className="absolute -bottom-8 -right-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-xs hidden xl:block border border-slate-100 dark:border-slate-700">
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
                 <span className="text-secondary dark:text-primary font-bold tracking-[0.3em] uppercase text-xs mb-6 block">Driven by Integrity</span>
                 <h2 className="text-4xl md:text-6xl font-bold mb-10 text-slate-900 dark:text-white tracking-tight leading-tight">Guided by Compassion, Defined by Excellence</h2>
                 <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed font-light">
-                  NHL is more than just a provider; we are partners in health. Headquartered in Woodlands, Lusaka, with a sister company in Perth, Western Australia, we deliver unparalleled renal care and medical standards.
+                  NRS is more than just a provider; we are partners in health. Headquartered in Woodlands, Lusaka, with a sister company in Perth, Western Australia, we deliver unparalleled renal care and medical standards.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
                   <div className="flex items-start gap-5">

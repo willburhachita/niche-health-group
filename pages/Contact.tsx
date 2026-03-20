@@ -1,8 +1,24 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Reveal } from '../components/Reveal';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: 'General Inquiry',
+    location: 'Lusaka, Zambia',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:contact@nichehealthcaregroup.com?subject=${encodeURIComponent(`[Website Contact] ${formData.subject} - from ${formData.name}`)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nLocation: ${formData.location}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="pt-24 bg-white dark:bg-slate-950 overflow-x-hidden">
       <header className="py-32 text-center hero-pattern overflow-hidden relative">
@@ -10,10 +26,10 @@ const Contact: React.FC = () => {
           <Reveal width="100%">
             <span className="text-secondary dark:text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Get in Touch</span>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-8 tracking-tight">
-              Contact <span className="text-primary italic">Niche</span> Group
+              Contact <span className="text-primary italic">Niche Renal Services</span>
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-              Reach out to our teams in Lusaka or Perth for dialysis services, medical supplies, clinical training, or corporate inquiries.
+              Reach out to our teams in Lusaka for dialisis services, renal wholesale and cronic condistions management or perth office for medical suplies
             </p>
           </Reveal>
         </div>
@@ -59,11 +75,20 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-6">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 border border-none" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">WhatsApp</h4>
+                    <p className="text-slate-600 dark:text-slate-400">+61 426 170 805</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-6">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-primary text-2xl">mail</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
-                    <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:underline break-all">info@nichehealthcaregroup.com</a>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all">contact@nichehealthcaregroup.com</a>
                   </div>
                 </div>
               </div>
@@ -106,11 +131,20 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-6">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 border border-none" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">WhatsApp</h4>
+                    <p className="text-slate-600 dark:text-slate-400">+260 779 156334</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-6">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-primary text-2xl">mail</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
-                    <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:underline break-all">info@nichehealthcaregroup.com</a>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all">contact@nichehealthcaregroup.com</a>
                   </div>
                 </div>
               </div>
@@ -131,18 +165,18 @@ const Contact: React.FC = () => {
                     Fill out the form below and our team will get back to you within 24 hours.
                   </p>
                 </div>
-                <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={(e) => e.preventDefault()}>
+                <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
                   <div className="space-y-3">
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Full Name</label>
-                    <input type="text" className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="John Doe" />
+                    <input type="text" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} required className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="John Doe" />
                   </div>
                   <div className="space-y-3">
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Email Address</label>
-                    <input type="email" className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="john@example.com" />
+                    <input type="email" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} required className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="john@example.com" />
                   </div>
                   <div className="space-y-3">
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Subject</label>
-                    <select className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
+                    <select value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
                       <option>General Inquiry</option>
                       <option>Dialysis / Renal Services</option>
                       <option>Wholesale Pharmacy</option>
@@ -151,17 +185,17 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="space-y-3">
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Preferred Location</label>
-                    <select className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
+                    <select value={formData.location} onChange={e => setFormData({...formData, location: e.target.value})} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
                       <option>Perth, Australia</option>
                       <option>Lusaka, Zambia</option>
                     </select>
                   </div>
                   <div className="md:col-span-2 space-y-3">
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Message</label>
-                    <textarea rows={5} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-3xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="How can we help you today?"></textarea>
+                    <textarea value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} required rows={5} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-3xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg" placeholder="How can we help you today?"></textarea>
                   </div>
                   <div className="md:col-span-2 pt-6">
-                    <button className="w-full bg-primary text-slate-900 font-black py-5 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all text-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3">
+                    <button type="submit" className="w-full bg-primary text-slate-900 font-black py-5 rounded-3xl hover:shadow-2xl hover:-translate-y-1 transition-all text-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3">
                       <span className="material-symbols-outlined">send</span> Send Message
                     </button>
                   </div>

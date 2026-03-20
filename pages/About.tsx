@@ -4,7 +4,7 @@ import { Reveal } from '../components/Reveal';
 
 const About: React.FC = () => {
   const timelineData = [
-    { year: '2022', title: 'Foundation', text: 'Establishment of Niche Healthcare Limited in Lusaka, Zambia, with a vision to transform kidney care.', icon: 'event', color: 'primary' },
+    { year: '2022', title: 'Foundation', text: 'Establishment of Niche Renal Services in Lusaka, Zambia, with a vision to transform kidney care.', icon: 'event', color: 'primary' },
     { year: '2024', title: 'Fully Operational', text: 'Niche Renal Services and Niche Wholesale Pharmacy become fully operational from Woodlands, Lusaka.', icon: 'public', color: 'secondary' },
     { year: '2025', title: 'Clinical Training Launch', text: 'Launch of comprehensive resuscitation clinical courses — BLS, IRAD, and Advanced Life Support certifications.', icon: 'trending_up', color: 'primary' },
   ];
@@ -28,7 +28,7 @@ const About: React.FC = () => {
             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story & Excellence</span>
             <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">Our Mission & <span className="text-primary">Vision</span></h1>
             <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Niche Healthcare Limited (NHL) is a Zambian-registered healthcare company headquartered in Woodlands, Lusaka. Led by two Zambian co-directors, NHL is committed to transforming kidney care through compassion, innovation, and integrity.
+              Niche Healthcare Limited (NRS) is a Zambian-registered healthcare company headquartered in Woodlands, Lusaka. Led by two Zambian co-directors, NRS is committed to transforming kidney care through compassion, innovation, and integrity.
             </p>
           </Reveal>
         </div>
@@ -54,7 +54,7 @@ const About: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Niche Healthcare Limited is committed to transforming kidney care in Zambia by delivering exceptional, patient-centred dialysis services and ensuring the reliable supply of medical consumables. Guided by compassion, innovation, and integrity, we aim to set new benchmarks in healthcare excellence.
+                  Niche Renal Services is committed to transforming kidney care in Zambia by delivering exceptional, patient-centred dialysis services and ensuring the reliable supply of medical consumables. Guided by compassion, innovation, and integrity, we aim to set new benchmarks in healthcare excellence.
                 </p>
               </div>
             </Reveal>
@@ -131,7 +131,7 @@ const About: React.FC = () => {
               <div>
                 <h3 className="text-3xl font-bold mb-6">Woodlands, Lusaka — Headquarters</h3>
                 <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  Headquartered in Woodlands, Lusaka, Niche Healthcare Limited operates Niche Renal Services (NRS) and Niche Wholesale Pharmacy. Our sister company, Niche Healthcare Group PTY Limited, operates from Perth, Western Australia, focusing on healthcare and allied health consumables/products export.
+                  Headquartered in Woodlands, Lusaka, Niche Renal Services (NRS) also operates Niche Wholesale Pharmacy. Our sister company, Niche Healthcare Group PTY Limited, operates from Perth, Western Australia, focusing on healthcare and allied health consumables/products export.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4 text-lg">

@@ -8,16 +8,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import PatientCare from './pages/PatientCare';
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const { pathname } = useLocation();
-
-  // Handle dark mode toggle
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark');
-  };
 
   // Scroll to top on route change
   useEffect(() => {
@@ -26,13 +20,14 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Navbar />
       
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/patient-care" element={<PatientCare />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

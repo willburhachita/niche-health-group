@@ -8,14 +8,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 lg:col-span-2">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-slate-900 font-black text-xl">N</div>
-              <span className="font-bold text-2xl tracking-tight uppercase">NICHE HEALTHCARE LIMITED</span>
-            </div>
+            <Link to="/" className="mb-6 block group">
+              <img src="/images/Logo1.png" alt="Niche Renal Services" className="h-20 sm:h-24 md:h-28 w-auto hover:scale-105 transition-transform drop-shadow-xl" />
+            </Link>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
               A Zambian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.
             </p>
-            <a href="mailto:info@nichehealthcaregroup.com" className="text-primary hover:text-primary/80 transition-colors text-sm font-medium mb-6 inline-block">info@nichehealthcaregroup.com</a>
+            <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:text-primary/80 transition-colors text-sm font-medium mb-6 inline-block">contact@nichehealthcaregroup.com</a>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all">
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
@@ -54,9 +53,9 @@ const Footer: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
-          <p>© 2025 Niche Healthcare Limited. All Rights Reserved.</p>
-          <div className="flex gap-8">
+        <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+          <p>© 2025 Niche Renal Services. All Rights Reserved.</p>
+          <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
