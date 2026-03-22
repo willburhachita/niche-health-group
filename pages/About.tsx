@@ -131,7 +131,7 @@ const About: React.FC = () => {
               <div>
                 <h3 className="text-3xl font-bold mb-6">Woodlands, Lusaka — Headquarters</h3>
                 <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  Headquartered in Woodlands, Lusaka, Niche Renal Services (NRS) also operates Niche Wholesale Pharmacy. Our sister company, Niche Healthcare Group PTY Limited, operates from Perth, Western Australia, focusing on healthcare and allied health consumables/products export.
+                  Headquartered in Woodlands, Lusaka, Niche Healthcare Services (NHL) also operates Niche Renal Services and Niche Wholesale Pharmacy. Our sister company, Niche Healthcare Group PTY Limited, operates from Perth, Western Australia, focusing on healthcare and allied health consumables/products export.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4 text-lg">

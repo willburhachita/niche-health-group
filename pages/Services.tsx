@@ -122,7 +122,7 @@ const Services: React.FC = () => {
               </div>
 
               {/* Who We Serve + Product Range - floating card */}
-              <div className="absolute -bottom-16 -left-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-sm hidden xl:block border border-slate-100 dark:border-slate-700">
+              <div className="absolute -bottom-36 -left-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-sm hidden xl:block border border-slate-100 dark:border-slate-700 z-20">
                 <h4 className="font-bold text-lg mb-3 text-slate-900 dark:text-white">Who We Serve</h4>
                 <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-2 mb-5">
                   <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary"></span>Public and private hospitals</li>

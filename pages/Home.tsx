@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                       <div className="w-px h-8 bg-slate-200 dark:bg-slate-800"></div>
                       <div>
                         <div className="text-2xl font-bold text-slate-900 dark:text-white">12</div>
-                        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Tracks</div>
+                        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Training Tracks</div>
                       </div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const Home: React.FC = () => {
                 <span className="text-secondary dark:text-primary font-bold tracking-[0.3em] uppercase text-xs mb-6 block">Driven by Integrity</span>
                 <h2 className="text-4xl md:text-6xl font-bold mb-10 text-slate-900 dark:text-white tracking-tight leading-tight">Guided by Compassion, Defined by Excellence</h2>
                 <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed font-light">
-                  NRS is more than just a provider; we are partners in health. Headquartered in Woodlands, Lusaka, with a sister company in Perth, Western Australia, we deliver unparalleled renal care and medical standards.
+                  NHL is more than just a provider; we are partners in health. Headquartered in Woodlands, Lusaka, with a sister company in Perth, Western Australia, we deliver unparalleled renal care and medical standards.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
                   <div className="flex items-start gap-5">
