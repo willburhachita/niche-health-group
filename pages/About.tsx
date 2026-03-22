@@ -26,9 +26,9 @@ const About: React.FC = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Reveal width="100%">
             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story & Excellence</span>
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">Our Mission & <span className="text-primary">Vision</span></h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">About <span className="text-primary">Us</span></h1>
             <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto">
-              Niche Healthcare Limited (NRS) is a Zambian-registered healthcare company headquartered in Woodlands, Lusaka. Led by two Zambian co-directors, NRS is committed to transforming kidney care through compassion, innovation, and integrity.
+              Niche Healthcare Limited (NHL), operating as Niche Renal Services (NRS) and Niche Wholesale Pharmacy, is a Zambian-registered healthcare company headquartered in Woodlands, Lusaka. Established in 2022, NHL has a sister company registered in Western Australia — Niche Healthcaregroup PTY Limited.
             </p>
           </Reveal>
         </div>
@@ -124,9 +124,9 @@ const About: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-              <div className="relative">
-                <img src="/images/headquarters.png" alt="Lusaka HQ" className="rounded-[3rem] shadow-2xl h-[500px] w-full object-cover" />
-                <div className="absolute -top-6 -left-6 bg-primary text-slate-900 p-8 rounded-[2rem] font-bold shadow-xl">Zambia HQ</div>
+              <div className="relative rounded-[3rem] shadow-2xl w-full flex items-center justify-center isolate">
+                <img src="/images/headquarters.png" alt="Lusaka HQ" className="w-full h-auto object-cover rounded-[3rem]" />
+                <div className="absolute -top-4 -left-4 bg-primary text-slate-900 px-8 py-4 rounded-[2rem] font-bold shadow-xl z-20">Zambia HQ</div>
               </div>
               <div>
                 <h3 className="text-3xl font-bold mb-6">Woodlands, Lusaka — Headquarters</h3>

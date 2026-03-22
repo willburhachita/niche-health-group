@@ -74,20 +74,9 @@ const Home: React.FC = () => {
                   <div className="p-10 lg:p-14 flex flex-col justify-center">
                     <span className="text-primary font-bold text-xs tracking-[0.2em] uppercase mb-6 block">Niche Renal Services</span>
                     <h3 className="text-3xl font-bold mb-8 leading-tight text-slate-900 dark:text-white">Comprehensive Dialysis & Renal Care</h3>
-                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-10">
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
                       NRS delivers tailored, high-quality renal care solutions for patients living with chronic kidney disease (CKD), including comprehensive dialysis treatments, hypertension management, and chronic medical conditions management.
                     </p>
-                    <div className="flex items-center gap-10">
-                      <div>
-                        <div className="text-3xl font-bold text-slate-900 dark:text-white">500+</div>
-                        <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Certified Graduates</div>
-                      </div>
-                      <div className="w-px h-12 bg-slate-200 dark:bg-slate-800"></div>
-                      <div>
-                        <div className="text-3xl font-bold text-slate-900 dark:text-white">12</div>
-                        <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">Training Tracks</div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -106,9 +95,22 @@ const Home: React.FC = () => {
                   <div className="h-56 overflow-hidden">
                     <img src="/images/clinical_training_1770889813333.png" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
-                  <div className="p-10">
-                    <h4 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Clinical Training</h4>
-                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-light">Comprehensive resuscitation clinical courses including BLS, IRAD, and Advanced Life Support certifications.</p>
+                  <div className="p-10 flex flex-col h-full justify-between">
+                    <div>
+                      <h4 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Clinical Training</h4>
+                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-light mb-8">Comprehensive resuscitation clinical courses including BLS, IRAD, and Advanced Life Support certifications.</p>
+                    </div>
+                    <div className="flex items-center gap-6 mt-auto">
+                      <div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-white">500+</div>
+                        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Graduates</div>
+                      </div>
+                      <div className="w-px h-8 bg-slate-200 dark:bg-slate-800"></div>
+                      <div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-white">12</div>
+                        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Tracks</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -123,11 +125,11 @@ const Home: React.FC = () => {
           <Reveal width="100%">
             <div className="flex flex-col lg:flex-row items-center gap-24">
               <div className="w-full lg:w-1/2 relative">
-                <div className="aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl relative">
-                  <img src="/images/headquarters.png" alt="NRS Headquarters" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                <div className="rounded-[4rem] shadow-2xl relative w-full isolate z-0">
+                  <img src="/images/headquarters.png" alt="NRS Headquarters" className="w-full h-auto object-cover rounded-[4rem]" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent z-10 rounded-[4rem]"></div>
                 </div>
-                <div className="absolute -bottom-8 -right-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-xs hidden xl:block border border-slate-100 dark:border-slate-700">
+                <div className="absolute -bottom-40 right-4 xl:-right-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-xs hidden xl:block border border-slate-100 dark:border-slate-700 z-20">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">format_quote</span>
                   <p className="italic text-base text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
                     "Committed to transforming kidney care in Zambia by delivering exceptional, patient-centred dialysis services."

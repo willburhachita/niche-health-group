@@ -12,7 +12,7 @@ const Services: React.FC = () => {
             <span className="text-secondary dark:text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Specializations</span>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-8 tracking-tight">Products & Services</h1>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12">
-              Niche Renal Services operates through specialised divisions — Niche Wholesale Pharmacy, and our Clinical Training Centre — to deliver comprehensive healthcare solutions.
+              In Zambia Niche Healthcare Limited operates through specialised divisions — Niche Renal Services, Niche Wholesale Pharmacy, and our Clinical Training Centre — to deliver comprehensive healthcare solutions. In Western Australia, NICHE HEALTHCAREGROUP PTY LTD is an Australian-based exporter of certified medical supplies and consumables, serving public health systems, NGOs, and private healthcare providers in Central and Southern Africa.
             </p>
 
             {/* Quick Navigation Menu */}

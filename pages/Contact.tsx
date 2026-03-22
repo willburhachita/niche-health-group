@@ -26,10 +26,10 @@ const Contact: React.FC = () => {
           <Reveal width="100%">
             <span className="text-secondary dark:text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Get in Touch</span>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-8 tracking-tight">
-              Contact <span className="text-primary italic">Niche Renal Services</span>
+              Contact <span className="text-primary italic">Niche Healthcare Limited</span>
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-              Reach out to our teams in Lusaka for dialisis services, renal wholesale and cronic condistions management or perth office for medical suplies
+              Reach out to our teams in Lusaka for dialysis services, renal wholesale, and chronic conditions management, or our Perth office for medical supplies.
             </p>
           </Reveal>
         </div>
@@ -38,113 +38,169 @@ const Contact: React.FC = () => {
       </header>
 
       <section className="py-24 container mx-auto px-6 lg:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Australia */}
           <Reveal className="h-full">
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
-              <div className="h-64 relative flex items-center justify-center">
+              <div className="h-48 xl:h-64 relative flex items-center justify-center">
                 <img
                   src="/images/wholesale_pharmacy_1770889446699.png"
                   alt="Australia Location"
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
                 <div className="relative z-10 text-center">
-                  <span className="material-symbols-outlined text-6xl text-primary mb-3">location_on</span>
-                  <h3 className="text-3xl font-bold text-slate-900 dark:text-white">Perth, Australia</h3>
-                  <p className="text-slate-600 dark:text-slate-300 font-medium">Sister Company — Healthcare Exports</p>
+                  <span className="material-symbols-outlined text-5xl xl:text-6xl text-primary mb-2">location_on</span>
+                  <h3 className="text-2xl xl:text-3xl font-bold text-slate-900 dark:text-white">Perth, Australia</h3>
+                  <p className="text-sm xl:text-base text-slate-600 dark:text-slate-300 font-medium">Sister Company — Exports</p>
                 </div>
               </div>
-              <div className="p-6 md:p-10 space-y-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">map</span>
+              <div className="p-6 md:p-8 space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">map</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Address</h4>
-                    <p className="text-slate-600 dark:text-slate-400">14 Vision Way, Southern River, WA 6110, Australia</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Address</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">14 Vision Way, Southern River, WA 6110, Australia</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">call</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">call</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Phone</h4>
-                    <p className="text-slate-600 dark:text-slate-400">+61 426 170 805</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Phone</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+61 426 170 805</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 border border-none" />
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">WhatsApp</h4>
-                    <p className="text-slate-600 dark:text-slate-400">+61 426 170 805</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+61 426 170 805</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">mail</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
-                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all">contact@nichehealthcaregroup.com</a>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Email</h4>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all text-sm">contact@nichehealthcaregroup.com</a>
                   </div>
                 </div>
               </div>
             </div>
           </Reveal>
 
-          {/* Zambia */}
+          {/* Zambia - Cairo Road */}
           <Reveal className="h-full" delay={0.2}>
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
-              <div className="h-64 relative flex items-center justify-center">
+              <div className="h-48 xl:h-64 relative flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
                 <img
                   src="/images/headquarters.png"
                   alt="Zambia Location"
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
                 <div className="relative z-10 text-center">
-                  <span className="material-symbols-outlined text-6xl text-primary mb-3">public</span>
-                  <h3 className="text-3xl font-bold text-slate-900 dark:text-white">Lusaka, Zambia</h3>
-                  <p className="text-slate-600 dark:text-slate-300 font-medium">Headquarters — Renal Services, Pharmacy & Training</p>
+                  <span className="material-symbols-outlined text-5xl xl:text-6xl text-primary mb-2">public</span>
+                  <h3 className="text-2xl xl:text-3xl font-bold text-slate-900 dark:text-white">Lusaka, Zambia</h3>
+                  <p className="text-sm xl:text-base text-slate-600 dark:text-slate-300 font-medium">Cairo Road Clinic</p>
                 </div>
               </div>
-              <div className="p-6 md:p-10 space-y-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">map</span>
+              <div className="p-6 md:p-8 space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">map</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Address</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Plot 4532, Cairo Road, Lusaka, Zambia</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Address</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">Plot 4532, Cairo Road, Lusaka, Zambia</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">call</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">call</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Phone</h4>
-                    <p className="text-slate-600 dark:text-slate-400">+260 779 156334</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Phone</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+260 779 156334</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 border border-none" />
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">WhatsApp</h4>
-                    <p className="text-slate-600 dark:text-slate-400">+260 779 156334</p>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+260 779 156334</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-6">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-primary text-2xl">mail</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">mail</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white text-lg mb-1">Email</h4>
-                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all">contact@nichehealthcaregroup.com</a>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Email</h4>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all text-sm">contact@nichehealthcaregroup.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Zambia - Woodlands */}
+          <Reveal className="h-full" delay={0.4}>
+            <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
+              <div className="h-48 xl:h-64 relative flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
+                <img
+                  src="/images/lusaka_clinic.png"
+                  alt="Zambia Woodlands Location"
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 filter brightness-[0.7]"
+                />
+                <div className="relative z-10 text-center">
+                  <span className="material-symbols-outlined text-5xl xl:text-6xl text-primary mb-2">apartment</span>
+                  <h3 className="text-2xl xl:text-3xl font-bold text-white shadow-black drop-shadow-md">Woodlands, Lusaka</h3>
+                  <p className="text-sm xl:text-base text-white/90 font-medium drop-shadow-md">Headquarters</p>
+                </div>
+              </div>
+              <div className="p-6 md:p-8 space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">map</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Address</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">23 Chipanama Road, Woodlands Extension, Lusaka</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">call</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Phone</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+260 572 819 694<br/>+260 779 156 334</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">+260 779 156 334</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-xl">mail</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Email</h4>
+                    <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:underline break-all text-sm">contact@nichehealthcaregroup.com</a>
                   </div>
                 </div>
               </div>
@@ -187,7 +243,8 @@ const Contact: React.FC = () => {
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Preferred Location</label>
                     <select value={formData.location} onChange={e => setFormData({...formData, location: e.target.value})} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
                       <option>Perth, Australia</option>
-                      <option>Lusaka, Zambia</option>
+                      <option>Lusaka, Zambia (Cairo Road)</option>
+                      <option>Lusaka, Zambia (Woodlands)</option>
                     </select>
                   </div>
                   <div className="md:col-span-2 space-y-3">

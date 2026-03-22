@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <img src="/images/Logo1.png" alt="Niche Renal Services" className="h-20 sm:h-24 md:h-28 w-auto hover:scale-105 transition-transform drop-shadow-xl" />
             </Link>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
-              A Zambian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.
+              A Zambian and Western Australian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.
             </p>
             <a href="mailto:contact@nichehealthcaregroup.com" className="text-primary hover:text-primary/80 transition-colors text-sm font-medium mb-6 inline-block">contact@nichehealthcaregroup.com</a>
             <div className="flex gap-4">
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
-          <p>© 2025 Niche Renal Services. All Rights Reserved.</p>
+          <p>© 2025 Niche Healthcare Limited All Rights Reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
