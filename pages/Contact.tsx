@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">Address</h4>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm">Plot 4532, Cairo Road, Lusaka, Zambia</p>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">1 chifumbule road, Woodlands, Lusaka</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
