@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
             </div>
           </Reveal>
 
-          {/* Zambia - Cairo Road */}
+          {/* Zambia - Lusaka */}
           <Reveal className="h-full" delay={0.2}>
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
               <div className="h-48 xl:h-64 relative flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
@@ -107,7 +107,6 @@ const Contact: React.FC = () => {
                 <div className="relative z-10 text-center">
                   <span className="material-symbols-outlined text-5xl xl:text-6xl text-primary mb-2">public</span>
                   <h3 className="text-2xl xl:text-3xl font-bold text-slate-900 dark:text-white">Lusaka, Zambia</h3>
-                  <p className="text-sm xl:text-base text-slate-600 dark:text-slate-300 font-medium">Cairo Road Clinic</p>
                 </div>
               </div>
               <div className="p-6 md:p-8 space-y-6">
@@ -243,7 +242,7 @@ const Contact: React.FC = () => {
                     <label className="text-sm font-bold uppercase tracking-widest text-slate-500 px-1">Preferred Location</label>
                     <select value={formData.location} onChange={e => setFormData({...formData, location: e.target.value})} className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all text-lg">
                       <option>Perth, Australia</option>
-                      <option>Lusaka, Zambia (Cairo Road)</option>
+                      <option>Lusaka, Zambia (Chifumbule Road)</option>
                       <option>Lusaka, Zambia (Woodlands)</option>
                     </select>
                   </div>
