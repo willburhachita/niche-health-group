@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+const STAFF_LOGIN_URL = 'https://app.nichehealthcaregroup.com';
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,12 +97,22 @@ const Navbar: React.FC = () => {
               ))}
             </div>
 
-            <Link
-              to="/contact"
-              className="bg-primary text-slate-900 px-6 py-2.5 rounded-full text-xs font-bold hover:shadow-lg hover:scale-105 active:scale-95 transition-all whitespace-nowrap hidden lg:block"
-            >
-              Book Appointment
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link
+                to="/contact"
+                className="bg-primary text-slate-900 px-6 py-2.5 rounded-full text-xs font-bold hover:shadow-lg hover:scale-105 active:scale-95 transition-all whitespace-nowrap hidden lg:block"
+              >
+                Book Appointment
+              </Link>
+
+              <a
+                href={STAFF_LOGIN_URL}
+                className="flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:border-primary hover:text-primary active:scale-95 transition-all whitespace-nowrap"
+              >
+                <span className="material-symbols-outlined text-sm leading-none">lock</span>
+                Staff Login
+              </a>
+            </div>
           </nav>
         </div>
 
@@ -165,6 +177,13 @@ const Navbar: React.FC = () => {
             >
               Book Appointment
             </Link>
+            <a
+              href={STAFF_LOGIN_URL}
+              className="flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white px-8 py-4 rounded-2xl font-bold text-center text-lg active:scale-95 transition-all"
+            >
+              <span className="material-symbols-outlined text-xl leading-none">lock</span>
+              Staff Login
+            </a>
             <div className="mt-auto pb-10">
               <p className="text-slate-500 dark:text-slate-400 text-sm mb-4">Contact us in Perth</p>
               <a href="tel:+61426170805" className="text-lg font-bold text-slate-900 dark:text-white">+61 426 170 805</a>

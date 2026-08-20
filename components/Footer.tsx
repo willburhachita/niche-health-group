@@ -32,6 +32,19 @@ const Footer: React.FC = () => {
               <li><Link to="/services" className="hover:text-primary transition-colors">Services</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
+
+            <h4 className="font-bold text-lg mt-12 mb-8">Staff</h4>
+            <ul className="space-y-4 text-slate-400">
+              <li>
+                <a
+                  href="https://app.nichehealthcaregroup.com"
+                  className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+                >
+                  <span className="material-symbols-outlined text-base leading-none">lock</span>
+                  Staff Login
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <h4 class="font-bold text-lg mb-8">Newsletter</h4>
