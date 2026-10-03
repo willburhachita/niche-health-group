@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
               <div className="h-48 xl:h-64 relative flex items-center justify-center">
                 <img
-                  src="/images/wholesale_pharmacy_1770889446699.png"
+                  src="/images/wholesale_pharmacy_1770889446699.webp" width={640} height={640} loading="lazy" decoding="async"
                   alt="Australia Location"
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width={20} height={20} loading="lazy" decoding="async" alt="WhatsApp" className="w-5 h-5 border border-none" />
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
               <div className="h-48 xl:h-64 relative flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
                 <img
-                  src="/images/headquarters.png"
+                  src="/images/headquarters.webp" srcSet="/images/headquarters-640.webp 640w, /images/headquarters.webp 1200w" sizes="(min-width: 1024px) 50vw, 100vw" width={1200} height={800} loading="lazy" decoding="async"
                   alt="Zambia Location"
                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                 />
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width={20} height={20} loading="lazy" decoding="async" alt="WhatsApp" className="w-5 h-5 border border-none" />
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>
@@ -155,7 +155,7 @@ const Contact: React.FC = () => {
             <div className="bg-slate-50 dark:bg-card-dark rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800 transition-all hover:shadow-2xl h-full">
               <div className="h-48 xl:h-64 relative flex items-center justify-center bg-slate-200 dark:bg-slate-900 overflow-hidden">
                 <img
-                  src="/images/lusaka_clinic.png"
+                  src="/images/lusaka_clinic.webp" width={600} height={900} loading="lazy" decoding="async"
                   alt="Zambia Woodlands Location"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 filter brightness-[0.7]"
                 />
@@ -186,7 +186,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-5 h-5 border border-none" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width={20} height={20} loading="lazy" decoding="async" alt="WhatsApp" className="w-5 h-5 border border-none" />
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 dark:text-white text-base mb-1">WhatsApp</h4>

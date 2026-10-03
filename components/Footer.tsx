@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 lg:col-span-2">
             <Link to="/" className="mb-6 block group">
-              <img src="/images/Logo1.png" alt="Niche Renal Services" className="h-20 sm:h-24 md:h-28 w-auto hover:scale-105 transition-transform drop-shadow-xl" />
+              <img src="/images/Logo1.webp" width={360} height={360} loading="lazy" decoding="async" alt="Niche Renal Services" className="h-20 sm:h-24 md:h-28 w-auto hover:scale-105 transition-transform drop-shadow-xl" />
             </Link>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
               A Zambian and Western Australian-registered healthcare company committed to transforming kidney care through exceptional dialysis services, reliable medical consumables supply, and professional clinical training.
@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div>
-            <h4 class="font-bold text-lg mb-8">Navigation</h4>
-            <ul class="space-y-4 text-slate-400">
+            <h4 className="font-bold text-lg mb-8">Navigation</h4>
+            <ul className="space-y-4 text-slate-400">
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-primary transition-colors">Services</Link></li>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 class="font-bold text-lg mb-8">Newsletter</h4>
+            <h4 className="font-bold text-lg mb-8">Newsletter</h4>
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
               <div className="relative">
                 <input

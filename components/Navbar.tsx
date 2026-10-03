@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
       setIsScrolled(window.scrollY > 40);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           {/* Logo Container - Shrinks and disappears when scrolled */}
           <div className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${isScrolled ? 'max-w-0 opacity-0' : 'max-w-[400px] opacity-100 mr-10'}`}>
             <Link to="/" className="block group w-max shrink-0">
-              <img src="/images/Logo1.png" alt="Niche Renal Services" className="h-20 md:h-28 w-auto group-hover:scale-105 transition-transform drop-shadow-xl" />
+              <img src="/images/Logo1.webp" width={360} height={360} decoding="async" alt="Niche Renal Services" className="h-20 md:h-28 w-auto group-hover:scale-105 transition-transform drop-shadow-xl" />
             </Link>
           </div>
 
@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden w-full flex items-center justify-between px-2 pt-2">
           <div className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${isScrolled ? 'max-w-0 opacity-0' : 'max-w-[300px] opacity-100'}`}>
             <Link to="/" className="block group shrink-0">
-              <img src="/images/Logo1.png" alt="Niche Renal Services" className="h-20 w-auto drop-shadow-xl transition-transform active:scale-95" />
+              <img src="/images/Logo1.webp" width={360} height={360} decoding="async" alt="Niche Renal Services" className="h-20 w-auto drop-shadow-xl transition-transform active:scale-95" />
             </Link>
           </div>
           <button

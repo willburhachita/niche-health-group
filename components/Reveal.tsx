@@ -4,6 +4,7 @@ interface RevealProps {
     children: React.ReactNode;
     width?: 'fit-content' | '100%';
     delay?: number;
+    duration?: number; // seconds
     direction?: 'up' | 'down' | 'left' | 'right';
     className?: string; // Allow passing extra classes
 }
@@ -12,6 +13,7 @@ export const Reveal: React.FC<RevealProps> = ({
     children,
     width = 'fit-content',
     delay = 0,
+    duration = 1,
     direction = 'up',
     className = ''
 }) => {
@@ -66,7 +68,7 @@ export const Reveal: React.FC<RevealProps> = ({
                     ? 'opacity-100 translate-y-0 translate-x-0'
                     : `opacity-0 ${getTranslateData()}`
                     }`}
-                style={{ transitionDelay }}
+                style={{ transitionDelay, transitionDuration: `${duration}s` }}
             >
                 {children}
             </div>
