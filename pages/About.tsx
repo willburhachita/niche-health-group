@@ -30,7 +30,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <Reveal width="100%">
+          <Reveal width="100%" duration={0.4}>
             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story & Excellence</span>
             <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">About <span className="text-primary">Us</span></h1>
             <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto">

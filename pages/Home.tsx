@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-          <Reveal>
+          <Reveal duration={0.4}>
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 text-primary font-bold tracking-[0.2em] uppercase text-[9px] mb-6 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
