@@ -12,7 +12,13 @@ const Home: React.FC = () => {
           <img
             alt="Healthcare Professional"
             className="w-full h-full object-cover filter brightness-[0.7] contrast-[1.1]"
-            src="/images/hero_background.png"
+            src="/images/hero_background.webp"
+            srcSet="/images/hero_background-768.webp 768w, /images/hero_background.webp 1536w"
+            sizes="100vw"
+            width={1536}
+            height={1024}
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/40 to-transparent"></div>
         </div>
@@ -65,7 +71,7 @@ const Home: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
                   <div className="relative h-80 lg:h-full overflow-hidden">
                     <img
-                      src="/images/renal_services.png"
+                      src="/images/renal_services.webp" width={640} height={640} loading="lazy" decoding="async"
                       alt="Niche Renal Services"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                     />
@@ -84,7 +90,7 @@ const Home: React.FC = () => {
               <div className="md:col-span-4 space-y-8 h-full flex flex-col">
                 <div className="flex-1 group bg-white dark:bg-slate-900 rounded-[3rem] overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
                   <div className="h-56 overflow-hidden">
-                    <img src="/images/wholesale_pharmacy_1770889446699.png" alt="Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <img src="/images/wholesale_pharmacy_1770889446699.webp" width={640} height={640} loading="lazy" decoding="async" alt="Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                   <div className="p-10">
                     <h4 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Wholesale Pharmacy</h4>
@@ -93,7 +99,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex-1 group bg-white dark:bg-slate-900 rounded-[3rem] overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
                   <div className="h-56 overflow-hidden">
-                    <img src="/images/clinical_training_1770889813333.png" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <img src="/images/clinical_training_1770889813333.webp" width={640} height={640} loading="lazy" decoding="async" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                   <div className="p-10 flex flex-col h-full justify-between">
                     <div>
@@ -126,7 +132,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-center gap-24">
               <div className="w-full lg:w-1/2 relative">
                 <div className="rounded-[4rem] shadow-2xl relative w-full isolate z-0">
-                  <img src="/images/headquarters.png" alt="NRS Headquarters" className="w-full h-auto object-cover rounded-[4rem]" />
+                  <img src="/images/headquarters.webp" srcSet="/images/headquarters-640.webp 640w, /images/headquarters.webp 1200w" sizes="(min-width: 1024px) 50vw, 100vw" width={1200} height={800} loading="lazy" decoding="async" alt="NRS Headquarters" className="w-full h-auto object-cover rounded-[4rem]" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent z-10 rounded-[4rem]"></div>
                 </div>
                 <div className="absolute -bottom-40 right-4 xl:-right-8 bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl max-w-xs hidden xl:block border border-slate-100 dark:border-slate-700 z-20">

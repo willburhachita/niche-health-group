@@ -273,7 +273,7 @@ const PatientCare: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="left">
               <div className="aspect-video lg:aspect-square w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/care_step1_diet.png" alt="Nutrition and Diet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/care_step1_diet.webp" width={640} height={640} loading="lazy" decoding="async" alt="Nutrition and Diet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
             </Reveal>
@@ -310,7 +310,7 @@ const PatientCare: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="right">
               <div className="aspect-video lg:aspect-square w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/care_step2_fluids.png" alt="Fluid Management" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/care_step2_fluids.webp" width={640} height={640} loading="lazy" decoding="async" alt="Fluid Management" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
             </Reveal>
@@ -347,7 +347,7 @@ const PatientCare: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="left">
               <div className="aspect-video lg:aspect-[4/3] w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/care_step3_medication.png" alt="Medication Adherence" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/care_step3_medication.webp" width={640} height={640} loading="lazy" decoding="async" alt="Medication Adherence" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
             </Reveal>
@@ -384,7 +384,7 @@ const PatientCare: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="right">
               <div className="aspect-video lg:aspect-[4/3] w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/care_step4_activity.png" alt="Mental and Physical Activity" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/care_step4_activity.webp" width={640} height={640} loading="lazy" decoding="async" alt="Mental and Physical Activity" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
             </Reveal>

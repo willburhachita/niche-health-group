@@ -62,7 +62,7 @@ const Services: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="left">
               <div className="aspect-video lg:aspect-[4/3] w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/renal_services.png" alt="Niche Renal Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/renal_services.webp" width={640} height={640} loading="lazy" decoding="async" alt="Niche Renal Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
               <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -117,7 +117,7 @@ const Services: React.FC = () => {
           <div className="lg:w-1/2 relative group">
             <Reveal direction="right">
               <div className="aspect-video lg:aspect-[4/3] w-full rounded-[3.5rem] overflow-hidden shadow-2xl relative">
-                <img src="/images/wholesale_pharmacy_new.png" alt="Niche Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <img src="/images/wholesale_pharmacy_new.webp" width={640} height={640} loading="lazy" decoding="async" alt="Niche Wholesale Pharmacy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
               </div>
 
@@ -187,7 +187,7 @@ const Services: React.FC = () => {
                 </div>
                 <div className="lg:w-1/2">
                   <div className="rounded-[3rem] overflow-hidden shadow-2xl relative group h-[500px]">
-                    <img src="/images/clinical_training_new.png" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" />
+                    <img src="/images/clinical_training_new.webp" width={640} height={640} loading="lazy" decoding="async" alt="Clinical Training" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent flex items-end p-12">
                       <div>
                         <span className="bg-primary/90 text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full mb-4 inline-block">ACCREDITED</span>

@@ -16,7 +16,13 @@ const About: React.FC = () => {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero_background.png"
+            src="/images/hero_background.webp"
+            srcSet="/images/hero_background-768.webp 768w, /images/hero_background.webp 1536w"
+            sizes="100vw"
+            width={1536}
+            height={1024}
+            fetchPriority="high"
+            decoding="async"
             alt="Background"
             className="w-full h-full object-cover"
           />
@@ -125,7 +131,7 @@ const About: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative rounded-[3rem] shadow-2xl w-full flex items-center justify-center isolate">
-                <img src="/images/headquarters.png" alt="Lusaka HQ" className="w-full h-auto object-cover rounded-[3rem]" />
+                <img src="/images/headquarters.webp" srcSet="/images/headquarters-640.webp 640w, /images/headquarters.webp 1200w" sizes="(min-width: 1024px) 50vw, 100vw" width={1200} height={800} loading="lazy" decoding="async" alt="Lusaka HQ" className="w-full h-auto object-cover rounded-[3rem]" />
                 <div className="absolute -top-4 -left-4 bg-primary text-slate-900 px-8 py-4 rounded-[2rem] font-bold shadow-xl z-20">Zambia HQ</div>
               </div>
               <div>
